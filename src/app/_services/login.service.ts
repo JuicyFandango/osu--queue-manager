@@ -15,9 +15,17 @@ export class LoginService {
    * @return {token} [Connection TOKEN for the future's component calls]
    */
   login(username:string, password:string){
-    return new Promise<string>( (resolve, reject) => {
-      //TODO: implement service and a actual call
-      resolve("SUPERTOKEN")
+    return new Promise<Object>( (resolve, reject) => {
+      //TODO: Implementar un servicio
+      if (username == "CloudChaser" && password == "123") {
+        let _user = new User()
+        _user.name = "CloudChaser"
+        _user.type = UserType.NORMAL
+        //TODO: Receive generated TOKEN from login service
+        resolve({ User : _user, Token : "SUPERTOKEN" })
+      }else{
+        reject("Usuario o contraseña incorrectos")
+      }
     })
   }
 }
