@@ -1,5 +1,5 @@
 export enum UserType{
-  NORMAL = 0,
+  NORMAL = 1,
   QUALITY_ASSURANCE, // Quality Assurance Team
   BEGINNER_BEATMAP_NOMINATOR, // First Tier, Beginner Beatmap Nominator
   ADVANCED_BEATMAP_NOMINATOR // Second Tier Advanced Beatmap Nominator
