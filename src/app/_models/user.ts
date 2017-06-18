@@ -13,8 +13,30 @@ export class User{
   country:string
   isQueueOpen:boolean
   maxQueueItems: number
+  maxAllowedInQueue:number
+  currentItemsInQueue: number
   rankedMaps:number
   pendingMaps:number
   lovedMaps:number
   graveyardedMaps:number
+
+  constructor(){}
+  mapObject(obj:any){
+    if (!obj) {
+      return;
+    }
+    
+    this.id = obj["id"]
+    this.name = obj["name"]
+    this.type = obj["type"]
+    this.country = obj["country"]
+    this.isQueueOpen = obj["isQueueOpen"]
+    this.maxQueueItems = obj["maxQueueItems"]
+    this.maxAllowedInQueue = obj["maxAllowedInQueue"]
+    this.currentItemsInQueue = obj["currentItemsInQueue"]
+    this.rankedMaps = obj["rankedMaps"]
+    this.pendingMaps = obj["pendingMaps"]
+    this.lovedMaps = obj["lovedMaps"]
+    this.graveyardedMaps = obj["graveyardedMaps"]
+  }
 }

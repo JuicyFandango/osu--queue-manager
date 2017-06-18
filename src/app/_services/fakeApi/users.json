@@ -1,0 +1,29 @@
+[
+  {
+    id : 1576498,
+    name : "Cloudchaser",
+    type : 1,
+    country : "CL",
+    isQueueOpen : true,
+    maxAllowedInQueue : 3,
+    currentItemsInQueue : 10,
+    rankedMaps : 3,
+    pendingMaps : 2,
+    lovedMaps : 1,
+    graveyardedMaps : 11,
+    rankedMaps : 6
+  },
+  {
+    id : 1869277,
+    name : "Ferret",
+    type : 3,
+    country : "CL",
+    isQueueOpen : false,
+    maxAllowedInQueue : 10,
+    currentItemsInQueue : 10,
+    rankedMaps : 6,
+    pendingMaps : 1,
+    lovedMaps : 0,
+    graveyardedMaps : 5,
+  }
+]

@@ -1,9 +1,13 @@
-import { Injectable } from '@angular/core';
-import { User, UserType } from '../_models/user';
+import { Injectable } from '@angular/core'
+import { User, UserType } from '../_models/user'
+import { UserService } from './user.service'
 
 @Injectable()
 export class LoginService {
-  constructor(){
+  constructor
+  (
+    private userService: UserService,
+  ){
 
   }
 
@@ -15,17 +19,18 @@ export class LoginService {
    * @return {token} [Connection TOKEN for the future's component calls]
    */
   login(username:string, password:string){
+    //TODO: Implementar un servicio
     return new Promise<Object>( (resolve, reject) => {
-      //TODO: Implementar un servicio
-      if (username == "CloudChaser" && password == "123") {
-        let _user = new User()
-        _user.name = "CloudChaser"
-        _user.type = UserType.NORMAL
-        //TODO: Receive generated TOKEN from login service
-        resolve({ User : _user, Token : "SUPERTOKEN" })
-      }else{
-        reject("User or password not valid")
-      }
+      this.userService.get(1576498)
+      .then( (_user: User) => {
+        if (_user) {
+          resolve({ User : _user, Token : "SUPERTOKEN" })
+        }
+        else{
+          reject("User or password not valid")
+        }
+
+      })
     })
   }
 }
