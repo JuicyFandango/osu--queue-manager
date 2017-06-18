@@ -24,7 +24,7 @@ export class LoginService {
         //TODO: Receive generated TOKEN from login service
         resolve({ User : _user, Token : "SUPERTOKEN" })
       }else{
-        reject("Usuario o contraseña incorrectos")
+        reject("User or password not valid")
       }
     })
   }

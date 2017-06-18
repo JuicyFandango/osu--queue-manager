@@ -15,13 +15,11 @@ export class LoginComponent implements OnInit {
   returnUrl: string
   errorMsg: string = null
 
-
   constructor(
     private loginService: LoginService,
     private router: Router,
     private route: ActivatedRoute,
-  )
-  {
+  ) {
 
     localStorage.clear()
     //TODO: kill the user login status

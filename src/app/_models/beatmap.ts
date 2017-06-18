@@ -1,3 +1,4 @@
+import { User } from './user'
 /**
  * Enumerator of the available gameplay modes:
  * - OSU
@@ -18,7 +19,7 @@ export enum BeatmapMode {
  */
 export class Beatmap {
   id:number
-  creatorId:number
+  creator:User
   diffName:string
   mode:BeatmapMode
   difficultyRating: number

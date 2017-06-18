@@ -13,9 +13,10 @@ import { AppComponent } from './app.component'
 import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
 import { HomeComponent } from './home/home.component'
-import { NavBarComponent } from './_components/navigation/nav-bar/navigation.component.navbar'
+import { NavBarComponent } from './_components/navigation/nav-bar/navbar.navigation.component'
+import { BeatmapCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
 ////////////////////////////////////////////////////////////////////////////////
-// Extra 
+// Extra
 import { routing } from './app.routing'
 import { AuthGuard } from './_guards/auth.guard'
 ////////////////////////////////////////////////////////////////////////////////
@@ -35,6 +36,7 @@ import { AuthGuard } from './_guards/auth.guard'
     RegisterComponent,
     HomeComponent,
     NavBarComponent,
+    BeatmapCardComponent,
   ],
   providers: [
     AuthGuard,
