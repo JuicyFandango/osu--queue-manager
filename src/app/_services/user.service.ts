@@ -11,7 +11,7 @@ export class UserService {
    * @param  {number} id User's ID
    * @return {Promise<User>}   User object
    */
-  getUser(id: number) {
+  get(id: number) {
     //TODO: Actual HTTP provider
     return new Promise<User>( (resolve, reject) => {
       let _user = new User()
@@ -26,6 +26,19 @@ export class UserService {
       _user.type = UserType.ADVANCED_BEATMAP_NOMINATOR
 
       resolve (_user)
+    })
+  }
+
+  /**
+   * Register an user into de server, it also blocks registration request for 5
+   * minutes in order to prevent DDOS attacks
+   * @param  {User}   user [description]
+   * @return {[type]}      [description]
+   */
+  //TODO: Actual registration on Server
+  register(user: User){
+    return new Promise<string>( (resolve, reject) => {
+
     })
   }
 }

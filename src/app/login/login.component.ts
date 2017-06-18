@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
     private loginService: LoginService,
     private router: Router,
     private route: ActivatedRoute,
-  ) {
+  )
+  {
 
     localStorage.clear()
     //TODO: kill the user login status

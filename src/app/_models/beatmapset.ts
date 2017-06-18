@@ -1,5 +1,10 @@
-import { Beatmap } from './beatmap'
+import { Beatmap } from './beatmap'
+import { User } from './user'
 
+/**
+ * Available status
+ * @type {Number}
+ */
 export enum BeatSetMapStatus {
   GRAVEYARDED = -2,
   WIP,
@@ -10,6 +15,10 @@ export enum BeatSetMapStatus {
   LOVED
 }
 
+/**
+ * Available Languages
+ * @type {Number}
+ */
 export enum BeatMapSetLanguage {
   ANY = 0,
   OTHER,
@@ -25,13 +34,16 @@ export enum BeatMapSetLanguage {
   ITALIAN
 }
 
-export class BeatMapSet {
+/**
+ * Group of beatmaps
+ */
+export class BeatmapSet {
   id:number
   beatmaps:Beatmap[]
   status:BeatSetMapStatus
   lastUpdatedDate:Date
   aprovedDate:Date
-  creator:string
+  creator:User
   tags:string
 
   /** Song info **/
