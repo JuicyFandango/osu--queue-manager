@@ -15,7 +15,8 @@ export enum BeatmapMode {
 }
 
 /**
- * Basic difficulty for gameplay purposes
+ * Basic gameplay item
+ * @return {[type]} [description]
  */
 export class Beatmap {
   id:number
@@ -23,4 +24,22 @@ export class Beatmap {
   diffName:string
   mode:BeatmapMode
   difficultyRating: number
+
+  constructor(){}
+
+  static mapObject(obj:Object){
+    if (!obj) {
+      return null;
+    }
+
+    let _bm = new Beatmap()
+
+    _bm.id = obj['id'],
+    _bm.creator = obj['creator'],
+    _bm.diffName = obj['diffName'],
+    _bm.mode = obj['mode'],
+    _bm.difficultyRating = obj['difficultyRating']
+
+    return _bm;
+  }
 }

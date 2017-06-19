@@ -21,22 +21,27 @@ export class User{
   graveyardedMaps:number
 
   constructor(){}
-  mapObject(obj:any){
+
+  static mapObject(obj:any){
     if (!obj) {
-      return;
+      return null
     }
-    
-    this.id = obj["id"]
-    this.name = obj["name"]
-    this.type = obj["type"]
-    this.country = obj["country"]
-    this.isQueueOpen = obj["isQueueOpen"]
-    this.maxQueueItems = obj["maxQueueItems"]
-    this.maxAllowedInQueue = obj["maxAllowedInQueue"]
-    this.currentItemsInQueue = obj["currentItemsInQueue"]
-    this.rankedMaps = obj["rankedMaps"]
-    this.pendingMaps = obj["pendingMaps"]
-    this.lovedMaps = obj["lovedMaps"]
-    this.graveyardedMaps = obj["graveyardedMaps"]
+
+    let _user = new User()
+
+    _user.id = obj["id"]
+    _user.name = obj["name"]
+    _user.type = obj["type"]
+    _user.country = obj["country"]
+    _user.isQueueOpen = obj["isQueueOpen"]
+    _user.maxQueueItems = obj["maxQueueItems"]
+    _user.maxAllowedInQueue = obj["maxAllowedInQueue"]
+    _user.currentItemsInQueue = obj["currentItemsInQueue"]
+    _user.rankedMaps = obj["rankedMaps"]
+    _user.pendingMaps = obj["pendingMaps"]
+    _user.lovedMaps = obj["lovedMaps"]
+    _user.graveyardedMaps = obj["graveyardedMaps"]
+
+    return _user
   }
 }
