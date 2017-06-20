@@ -1,3 +1,5 @@
-<p>
-  home works!
-</p>
+<section fxLayout="row" *ngFor="let beatmap of beatmaps" class="m-15">
+  <section fxFlex="33">
+    <beatmapset-card [beatmapSet]="beatmap"></beatmapset-card>
+  </section>
+</section>

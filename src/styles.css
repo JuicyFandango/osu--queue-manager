@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 body{
   margin:0;
+  background-color: #424242;
 }
+
+.full-width: { width: 100% }
+
+.m-10   { margin: 10px }
+.m-t-10 { margin-top: 10px }
+.m-b-10 { margin-bottom: 10px }
+
+.m-15   { margin: 15px }
+.m-t-15 { margin-top: 15px }
+.m-b-15 { margin-bottom: 15px }
+
+.m-20   { margin: 20px }
+.m-t-20 { margin-top: 20px }
+.m-b-20 { margin-bottom: 20px }
+
+span.link{
+  cursor:pointer
+}
+  span.link:hover{
+    opacity: 0.95
+  }

@@ -1,26 +1,33 @@
-<md-card>
-  <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
-    <md-card-title>
-      Login
-    </md-card-title>
-    <md-card-content>
-      <md-input-container class="full-width">
-        <label>Username</label>
-        <input mdInput type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
-      </md-input-container>
-      <md-input-container class="full-width">
-        <label>Password</label>
-        <input mdInput type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
-      </md-input-container>
-      <div *ngIf="errorMsg">
-        {{ errorMsg }}
-      </div>
-      <p>
-        Not registered? click <a href="" (ngclick)="openRegisterForm()">here!</a>
-      </p>
-    </md-card-content>
-    <md-card-actions>
-      <button md-raised-button class="full-width" color="primary" [disabled]="!f.form.valid">Login</button>
-    </md-card-actions>
-  </form>
-</md-card>
+<section class="flex-container m-t-20" fxLayout="row" fxLayoutAlign="center center">
+  <md-card>
+    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+      <md-card-title>
+        Login
+      </md-card-title>
+
+      <md-card-content>
+        <section class="flex-container" fxLayout="column" fxLayoutAlign="center center">
+          <md-input-container>
+            <label>Username</label>
+            <input mdInput type="text" class="form-control" name="username" [(ngModel)]="model.username" #username="ngModel" required />
+          </md-input-container>
+          <md-input-container class="full-width">
+            <label>Password</label>
+            <input mdInput type="password" class="form-control" name="password" [(ngModel)]="model.password" #password="ngModel" required />
+          </md-input-container>
+          <div *ngIf="errorMsg">
+            {{ errorMsg }}
+          </div>
+          <p>
+            Not registered? click <a href="" (ngclick)="openRegisterForm()">here!</a>
+          </p>
+        </section>
+      </md-card-content>
+
+      <md-card-actions>
+        <button md-raised-button color="primary" style="width:100%" [disabled]="!f.form.valid">Login</button>
+      </md-card-actions>
+    </form>
+  </md-card>
+
+</section>

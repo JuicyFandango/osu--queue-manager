@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core'
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 import { MdButtonModule } from '@angular/material'
 import { MdSnackBarModule } from '@angular/material'
@@ -21,6 +22,7 @@ import { MdToolbarModule } from '@angular/material'
     MdInputModule,
     MdCheckboxModule,
     MdToolbarModule,
+    FlexLayoutModule,
   ],
   exports: [
     MdButtonModule,
@@ -32,6 +34,7 @@ import { MdToolbarModule } from '@angular/material'
     MdInputModule,
     MdCheckboxModule,
     MdToolbarModule,
+    FlexLayoutModule,
   ],
 })
 

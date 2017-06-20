@@ -2,18 +2,25 @@
 
   <md-card-header>
     <!-- TODO: Decide where to get the user profile image -->
-    <md-card-title>{{ beatmapSet.title }}</md-card-title>
+    <md-card-title><b>{{ beatmapSet.title }}</b> by {{ beatmapSet.artist }}</md-card-title>
     <!-- Get custom icons for status -->
 
-    <md-card-subtitle>{{ beatmapSet.creator.name }}</md-card-subtitle>
+    <md-card-subtitle><span class="link"(click)="goToUserProfile">{{ beatmapSet.creator.name }}</span></md-card-subtitle>
   </md-card-header>
 
   <md-card-content>
-    IMAGE HERE
-    <button md-button>Show more</button>
+    <section fxLayout="row">
+      <section fxFlex="100" fxLayoutAlign="center center">
+        IMAGE HERE
+      </section>
+    </section>
+    <br>
+    <section fxLayout="row">
+      <button fxFlex="100" md-button>Show more</button>
+    </section>
   </md-card-content>
 
-  <md-card-actions>
+  <md-card-actions fxLayoutAlign="center center">
     <button md-raised-button>SHARE</button>
     <button md-raised-button>DETAILS</button>
     <button md-raised-button>SUBSCRIBE</button>

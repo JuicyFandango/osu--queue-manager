@@ -4,7 +4,7 @@ import { Beatmap, BeatmapMode} from '../_models/beatmap';
 @Injectable()
 export class BeatmapService {
 
-  fakeApi: Object[] =
+  private fakeApi: Object[] =
   [
     {
       id: 532555,

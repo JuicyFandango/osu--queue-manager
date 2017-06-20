@@ -4,8 +4,7 @@ import { LoginService } from '../_services/login.service'
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.css']
+  templateUrl: './login.component.html'
 })
 
 export class LoginComponent implements OnInit {
@@ -20,9 +19,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
   ) {
-
-    localStorage.clear()
-    //TODO: kill the user login status
+    
     this.returnUrl = this.route.snapshot.queryParams['returnUrl']
   }
 

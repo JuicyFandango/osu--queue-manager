@@ -21,6 +21,10 @@ export class LoginService {
   login(username:string, password:string){
     //TODO: Implementar un servicio
     return new Promise<Object>( (resolve, reject) => {
+      if (password != "123") {
+        reject("User or password not valid")
+      }
+
       this.userService.get(1576498)
       .then( (_user: User) => {
         if (_user) {
@@ -29,7 +33,6 @@ export class LoginService {
         else{
           reject("User or password not valid")
         }
-
       })
     })
   }

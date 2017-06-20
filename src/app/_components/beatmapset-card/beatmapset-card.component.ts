@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core'
+import { Component, Input, OnInit } from '@angular/core'
 import { BeatmapSet } from '../../_models/beatmapset'
 
 @Component({
-  selector: 'beatmap-card',
+  selector: 'beatmapset-card',
   templateUrl: './beatmapset-card.component.html'
 })
-export class BeatmapCardComponent {
+export class BeatmapCardComponent implements OnInit {
 
   @Input() beatmapSet: BeatmapSet
 
@@ -13,4 +13,7 @@ export class BeatmapCardComponent {
 
   }
 
+  ngOnInit(){
+    console.log(this.beatmapSet)
+  }
 }
