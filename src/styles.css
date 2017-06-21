@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
   margin:0;
-  background-color: #424242;
+  background-color: #333333;
 }
 
 .full-width: { width: 100% }
@@ -18,9 +18,16 @@ body{
 .m-t-20 { margin-top: 20px }
 .m-b-20 { margin-bottom: 20px }
 
-span.link{
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+.link{
   cursor:pointer
 }
-  span.link:hover{
+  .link:hover{
     opacity: 0.95
   }

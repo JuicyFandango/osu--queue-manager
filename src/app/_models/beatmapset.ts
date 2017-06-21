@@ -57,7 +57,7 @@ export class BeatmapSet {
   lastUpdatedDate: Date
   aprovedDate: Date
   creator: User
-  tags: string[]
+  tags: string
 
   /** Song info **/
   title: string
@@ -93,6 +93,7 @@ export class BeatmapSet {
     _bms.artist = obj['artist']
     _bms.genre = obj['genre']
     _bms.language = obj['language']
+    _bms.bpm = obj["bpm"]
     _bms.source = obj['source']
 
     _bms.beatmaps = []

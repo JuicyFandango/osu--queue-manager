@@ -9,11 +9,16 @@ export class BeatmapCardComponent implements OnInit {
 
   @Input() beatmapSet: BeatmapSet
 
-  constructor(){
+  isInfoToggled:boolean = false;
 
-  }
+  constructor(){ }
 
   ngOnInit(){
     console.log(this.beatmapSet)
+  }
+
+  toggleInfo(){
+    this.isInfoToggled = !this.isInfoToggled
+    console.log(this.isInfoToggled)
   }
 }

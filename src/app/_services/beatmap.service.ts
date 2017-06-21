@@ -46,7 +46,7 @@ export class BeatmapService {
         lovedMaps : 0,
         graveyardedMaps : 60,
       },
-      tags: ['love', 'live', 'sunshine!!' ,'christmas', 'xmas', 'school', 'idol', 'festival', 'sif', 'project', '-nitrous', 'pentori'],
+      tags: 'love live sunshine!! christmas xmas school idol festival sif project -nitrous pentori',
       title: 'Jingle Bells ga Tomaranai',
       artist: 'Aquors',
       genre: BeatmapsetGenre.VIDEO_GAME,
