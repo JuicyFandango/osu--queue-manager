@@ -1,12 +1,15 @@
 ////////////////////////////////////////////////////////////////////////////////
-// Modules
+// Modules - External
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialUIModule } from './_modules/materialUI.module'
+////////////////////////////////////////////////////////////////////////////////
+// Modules - App Modules
+import { UserModule } from './user/user.module'
 // Modules - Service Modules
-import { ServicesModule } from './_modules/services.modules'
+import { ServicesModule } from './_services/services.modules'
 ////////////////////////////////////////////////////////////////////////////////
 // Components
 import { AppComponent } from './app.component'
@@ -27,6 +30,7 @@ import { AuthGuard } from './_guards/auth.guard'
     FormsModule,
     routing,
     BrowserAnimationsModule,
+    UserModule,
     MaterialUIModule,
     ServicesModule,
   ],

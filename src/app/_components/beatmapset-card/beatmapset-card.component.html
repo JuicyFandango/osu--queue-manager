@@ -2,7 +2,7 @@
 
   <md-card-header>
     <!-- TODO: Decide where to get the user profile image -->
-    <img md-card-avatar class="link" (click)="goToProfilePage()" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
+    <img md-card-avatar class="link" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
     <md-card-title>{{ beatmapSet.creator.name }}</md-card-title>
     <!-- Get custom icons for status -->
 

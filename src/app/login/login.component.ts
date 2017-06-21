@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
   ) {
-    
+
     this.returnUrl = this.route.snapshot.queryParams['returnUrl']
   }
 
@@ -31,8 +31,8 @@ export class LoginComponent implements OnInit {
     this.isLoading = true;
     this.loginService.login(this.model.username, this.model.password)
       .then((loginObject: any) => {
-        localStorage.setItem('connectionToken', loginObject.user)
-        localStorage.setItem('currentUser', loginObject.Token)
+        localStorage.setItem('connectionToken', loginObject.Token)
+        localStorage.setItem('currentUser', loginObject.User.id)
 
         if (this.returnUrl) {
           this.router.navigate([this.returnUrl])

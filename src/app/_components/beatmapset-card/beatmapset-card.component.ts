@@ -1,24 +1,29 @@
-import { Component, Input, OnInit } from '@angular/core'
+import { Component, Input } from '@angular/core'
 import { BeatmapSet } from '../../_models/beatmapset'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'beatmapset-card',
   templateUrl: './beatmapset-card.component.html'
 })
-export class BeatmapCardComponent implements OnInit {
+export class BeatmapCardComponent {
 
   @Input() beatmapSet: BeatmapSet
 
   isInfoToggled:boolean = false;
 
-  constructor(){ }
+  constructor
+  (
+    private router: Router,
+  ){
 
-  ngOnInit(){
-    console.log(this.beatmapSet)
   }
 
   toggleInfo(){
     this.isInfoToggled = !this.isInfoToggled
-    console.log(this.isInfoToggled)
+  }
+
+  goToProfilePage(userId: number){
+    this.router.navigate(['user/profile', userId])
   }
 }
