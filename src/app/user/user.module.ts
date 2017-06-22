@@ -5,7 +5,7 @@ import { UserProfileComponent } from './profile/user-profile.component'
 @NgModule({
   declarations:
   [
-    UserProfileComponent
+    UserProfileComponent,
   ]
 })
 
