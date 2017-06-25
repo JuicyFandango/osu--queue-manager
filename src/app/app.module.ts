@@ -20,6 +20,9 @@ import { NavBarComponent } from './_components/navigation/nav-bar/navbar.naviga
 import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
 import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'
 ////////////////////////////////////////////////////////////////////////////////
+// Pipes
+import { UserTypePipe } from './_pipes/userType.Pipe'
+////////////////////////////////////////////////////////////////////////////////
 // Extra
 import { routing } from './app.routing'
 import { AuthGuard } from './_guards/auth.guard'
@@ -36,6 +39,7 @@ import { AuthGuard } from './_guards/auth.guard'
   ],
   declarations: [
     AppComponent,
+    UserTypePipe,
     LoginComponent,
     RegisterComponent,
     HomeComponent,

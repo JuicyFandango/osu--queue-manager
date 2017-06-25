@@ -8,12 +8,12 @@
       {{ user.country }}
     </h3>
     <h4>
-      {{ user.type }}
+      {{ user.type | UserType }}
     </h4>
   </section>
 
   <!-- Queue status info -->
-  <section fxLayout="row" fxLayoutAlign="center center" class="queueStatus" [ngClass]="{ 'queueOpen': user.isQueueOpen, 'queueClosed': !user.isQueueOpen}">
+  <section class="queueStatus" fxLayout="row" fxLayoutAlign="center center" [ngClass]="{ 'queueOpen': user.isQueueOpen, 'queueClosed': !user.isQueueOpen}">
     <section *ngIf="user.isQueueOpen">
       Accepting mod requests!
     </section>

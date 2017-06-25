@@ -1,3 +1,24 @@
+.userProfile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(48, 48, 48, 0.45)
+    ),
+  url('/assets/img/page-light.png');
+}
+.userProfile h1, h2, h3, h4{
+  color:white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0px;
+}
+
+.userProfile .userImage{
+  border-radius: 50px;
+  margin-bottom: 5px;
+}
+
 .queueStatus{
   font-family: Roboto, "Helvetica Neue", sans-serif;
   color:white;
@@ -10,22 +31,6 @@
   }
   .queueClosed{
     background-color: rgb(180, 44, 44)
-  }
-
-.userProfile {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgb(38, 38, 38);
-}
-  .userProfile h1, h2, h3, h4{
-    color:white;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    margin: 0px;
-  }
-
-  .userProfile .userImage{
-    border-radius: 50px;
-    margin-bottom: 5px;
   }
 
 .containers{
