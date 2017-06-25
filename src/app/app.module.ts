@@ -21,7 +21,7 @@ import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmaps
 import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'
 ////////////////////////////////////////////////////////////////////////////////
 // Pipes
-import { UserTypePipe } from './_pipes/userType.Pipe'
+import { PipeModule } from './_pipes/pipe.module'
 ////////////////////////////////////////////////////////////////////////////////
 // Extra
 import { routing } from './app.routing'
@@ -36,10 +36,10 @@ import { AuthGuard } from './_guards/auth.guard'
     BrowserAnimationsModule,
     MaterialUIModule,
     ServicesModule,
+    PipeModule,
   ],
   declarations: [
     AppComponent,
-    UserTypePipe,
     LoginComponent,
     RegisterComponent,
     HomeComponent,
