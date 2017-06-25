@@ -13,7 +13,7 @@
   </section>
 
   <!-- Queue status info -->
-  <section fxLayout="row" fxLayoutAlign="center" class="queueStatus" [ngClass]="{ 'queueOpen': user.isQueueOpen, 'queueClosed': !user.isQueueOpen}">
+  <section fxLayout="row" fxLayoutAlign="center center" class="queueStatus" [ngClass]="{ 'queueOpen': user.isQueueOpen, 'queueClosed': !user.isQueueOpen}">
     <section *ngIf="user.isQueueOpen">
       Accepting mod requests!
     </section>
@@ -36,7 +36,7 @@
   <section fxlayout.md="row" fxLayout.xs="column" fxLayoutGap="10px" class="containers">
     <md-card fxFlex="50" fxFlex.xs="100">
       <md-card-title>
-        Ranked beatmaps
+        Ranked beatmaps [<span>{{ pendingBeatmaps.length }}</span>]
       </md-card-title>
       <md-card-content>
         <beatmapset-list [beatmapSets]="pendingBeatmaps">
@@ -46,7 +46,7 @@
 
     <md-card fxFlex="50" fxFlex.xs="100">
       <md-card-title>
-        Pending beatmaps
+        Pending beatmaps [<span>{{ pendingBeatmaps.length }}</span>]
       </md-card-title>
       <md-card-content>
         <beatmapset-list [beatmapSets]="pendingBeatmaps">

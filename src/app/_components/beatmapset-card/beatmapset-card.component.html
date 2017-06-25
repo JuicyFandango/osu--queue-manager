@@ -1,16 +1,8 @@
 <md-card>
 
   <md-card-header>
-    <!-- TODO: Decide where to get the user profile image -->
-    <img md-card-avatar class="link" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
-    <md-card-title>{{ beatmapSet.creator.name }}</md-card-title>
-    <!-- Get custom icons for status -->
-
-    <md-card-subtitle>
-      <span>
-        {{ beatmapSet.title }}
-      </span>
-    </md-card-subtitle>
+    <img md-card-avatar mdTooltip="{{ beatmapSet.creator.name }}" class="link" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
+    <md-card-title>{{ beatmapSet.title }}</md-card-title>
   </md-card-header>
 
   <img md-card-image src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>

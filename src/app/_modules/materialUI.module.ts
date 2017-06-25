@@ -11,6 +11,7 @@ import { MdInputModule } from '@angular/material'
 import { MdCheckboxModule } from '@angular/material'
 import { MdToolbarModule } from '@angular/material'
 import { MdTooltipModule } from '@angular/material'
+import { MdChipsModule } from '@angular/material'
 
 @NgModule({
   imports: [
@@ -24,6 +25,7 @@ import { MdTooltipModule } from '@angular/material'
     MdCheckboxModule,
     MdToolbarModule,
     MdTooltipModule,
+    MdChipsModule,
     FlexLayoutModule,
   ],
   exports: [
@@ -37,6 +39,7 @@ import { MdTooltipModule } from '@angular/material'
     MdCheckboxModule,
     MdToolbarModule,
     MdTooltipModule,
+    MdChipsModule,
     FlexLayoutModule,
   ],
 })
