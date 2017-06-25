@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ActivatedRoute } from '@angular/router'
+import { Title } from '@angular/platform-browser'
 import { User } from '../../_models/user'
 import { UserService } from '../../_services/user.service'
 import { BeatmapSet } from '../../_models/beatmapset'
@@ -19,6 +20,7 @@ export class UserProfileComponent implements OnInit {
   pendingBeatmaps: BeatmapSet[];
   constructor
   (
+    private title: Title,
     private userService: UserService,
     private route: ActivatedRoute,
     private bmsService: BeatmapService,
@@ -38,6 +40,8 @@ export class UserProfileComponent implements OnInit {
     this.userService.get(id)
     .then( (user:User) =>{
       this.user = user
+
+      this.title.setTitle("osu!QM || " + user.name + "'s profile")
 
       //Get pending beatmapsets
       //TODO: Implement this

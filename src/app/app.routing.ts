@@ -7,7 +7,7 @@ import { LoginComponent } from './login/login.component'
 import { UserProfileComponent } from './user/profile/user-profile.component'
 
 const appRoutes: Routes = [
-    { path: 'home', component: HomeComponent },
+    { path: 'home', component: HomeComponent, data:{title : "Home"} },
     { path: 'login', component: LoginComponent },
     { path: 'user/profile/:id', component: UserProfileComponent},
 

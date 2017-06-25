@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser'
 import { BeatmapService } from '../_services/beatmap.service'
 import { BeatmapSet } from '../_models/beatmapset'
 import { Router } from '@angular/router'
@@ -14,10 +15,11 @@ export class HomeComponent implements OnInit {
   //TODO: Infinite scrolling
   constructor
   (
+    private title: Title,
     private beatmapService: BeatmapService,
     private router: Router
   ){
-
+    this.title.setTitle('osu!QM || Home')
   }
 
   ngOnInit() {

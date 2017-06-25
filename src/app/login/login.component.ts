@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core'
 import { Router, ActivatedRoute } from '@angular/router'
+import { Title } from '@angular/platform-browser'
 import { LoginService } from '../_services/login.service'
 
 @Component({
@@ -15,11 +16,12 @@ export class LoginComponent implements OnInit {
   errorMsg: string = null
 
   constructor(
+    private title : Title,
     private loginService: LoginService,
     private router: Router,
     private route: ActivatedRoute,
   ) {
-
+    this.title.setTitle('osu!QM || Login')
     this.returnUrl = this.route.snapshot.queryParams['returnUrl']
   }
 
