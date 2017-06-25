@@ -1,0 +1,20 @@
+.userProfile h1, h2, h3, h4{
+  color:white;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.userProfile {
+  padding-top: 20px;
+  background-color: rgb(38, 38, 38);
+}
+
+.userProfile .userImage{
+  border-radius: 75px;
+  margin-bottom: 5px;
+}
+
+.beatmaps{
+  margin: 25px;
+}

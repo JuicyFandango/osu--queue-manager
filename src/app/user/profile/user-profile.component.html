@@ -1,1 +1,36 @@
-<p> User profile works! </p>
+<section *ngIf="user?.id" >
+  <section class="userProfile" fxLayout="column" fxLayoutAlign="center center">
+    <img class="userImage" src="https://a.ppy.sh/{{ user.id }}" alt="">
+    <h2>
+      {{ user.name }}
+    </h2>
+    <h3>
+      {{ user.country }}
+    </h3>
+    <h4>
+      {{ user.type }}
+    </h4>
+  </section>
+
+  <section fxlayout.md="row" fxLayout.xs="column" fxLayoutGap="10px" class="beatmaps">
+    <md-card fxFlex="50" fxFlex.xs="100">
+      <md-card-title>
+        Ranked beatmaps
+      </md-card-title>
+      <md-card-content>
+        <beatmapset-list [beatmapSets]="pendingBeatmaps">
+        </beatmapset-list>
+      </md-card-content>
+    </md-card>
+
+    <md-card fxFlex="50" fxFlex.xs="100">
+      <md-card-title>
+        Pending beatmaps
+      </md-card-title>
+      <md-card-content>
+        <beatmapset-list [beatmapSets]="pendingBeatmaps">
+        </beatmapset-list>
+      </md-card-content>
+    </md-card>
+  </section>
+</section>

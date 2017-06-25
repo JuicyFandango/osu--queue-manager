@@ -6,7 +6,7 @@ import { Router } from '@angular/router'
   selector: 'beatmapset-card',
   templateUrl: './beatmapset-card.component.html'
 })
-export class BeatmapCardComponent {
+export class BeatmapsetCardComponent {
 
   @Input() beatmapSet: BeatmapSet
 

@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialUIModule } from './_modules/materialUI.module'
 ////////////////////////////////////////////////////////////////////////////////
 // Modules - App Modules
-import { UserModule } from './user/user.module'
+import { UserProfileComponent } from './user/profile/user-profile.component'
 // Modules - Service Modules
 import { ServicesModule } from './_services/services.modules'
 ////////////////////////////////////////////////////////////////////////////////
@@ -17,7 +17,8 @@ import { LoginComponent } from './login/login.component'
 import { RegisterComponent } from './register/register.component'
 import { HomeComponent } from './home/home.component'
 import { NavBarComponent } from './_components/navigation/nav-bar/navbar.navigation.component'
-import { BeatmapCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
+import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
+import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'
 ////////////////////////////////////////////////////////////////////////////////
 // Extra
 import { routing } from './app.routing'
@@ -30,7 +31,6 @@ import { AuthGuard } from './_guards/auth.guard'
     FormsModule,
     routing,
     BrowserAnimationsModule,
-    UserModule,
     MaterialUIModule,
     ServicesModule,
   ],
@@ -40,7 +40,9 @@ import { AuthGuard } from './_guards/auth.guard'
     RegisterComponent,
     HomeComponent,
     NavBarComponent,
-    BeatmapCardComponent,
+    UserProfileComponent,
+    BeatmapsetCardComponent,
+    BeatmapsetListComponent,
   ],
   providers: [
     AuthGuard,

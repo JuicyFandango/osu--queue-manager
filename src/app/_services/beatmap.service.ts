@@ -31,8 +31,8 @@ export class BeatmapService {
         }
       ],
       status: BeatmapsetStatus.RANKED,
-      lastUpdatedDate: '2016-11-13T12:00.00.000',
-      aprovedDate: '2016-12-29T12:00.00.000',
+      lastUpdatedDate: Date.parse('2016-11-13'),
+      aprovedDate: Date.parse('2016-12-29'),
       creator: {
         id : 1576498,
         name : "Cloudchaser",
@@ -60,14 +60,28 @@ export class BeatmapService {
 
   getBeatmapSet(id:number){
     return new Promise<BeatmapSet>( (resolve, reject) => {
+      //TODO: Replace fakeApi with an actual API
       let _index = this.fakeApi.findIndex( beatmapset => beatmapset["id"] == id)
       let _bms = BeatmapSet.mapObject(this.fakeApi[_index])
 
       if (_bms) {
         resolve (_bms)
       }else{
-        reject("Beatmapset not found")
+        reject(null)
       }
+    })
+  }
+
+  getUserPendingBeatmapSet(userId:number){
+    return new Promise<BeatmapSet[]>( (resolve,reject) => {
+      //TODO: Replace fakeApi with an actual API
+      let _result: BeatmapSet[] = [];
+
+      for(let _unformattedbm of this.fakeApi){
+        _result.push(BeatmapSet.mapObject(_unformattedbm));
+      }
+
+      resolve(_result);
     })
   }
 }
