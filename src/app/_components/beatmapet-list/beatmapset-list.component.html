@@ -1,9 +1,12 @@
-<md-list>
-  <md-list-item *ngFor="let beatmapSet of beatmapSets">
-    <img md-list-avatar src="//b.ppy.sh/thumb/{{beatmapSet.id}}.jpg"/>
-    <h3 md-line>{{beatmapSet.title}}</h3>
-    <p md-line>
-      Last updated: {{ beatmapSet.lastUpdatedDate | date:'fullDate' }}
-    </p>
-  </md-list-item>
+<md-list dense>
+  <section *ngFor="let beatmapSet of beatmapSets">
+    <md-divider></md-divider>
+    <md-list-item>
+      <img md-list-avatar src="//b.ppy.sh/thumb/{{beatmapSet.id}}.jpg"/>
+      <h3 md-line>{{beatmapSet.title}}</h3>
+      <p md-line>
+        Last updated: {{ beatmapSet.lastUpdatedDate | date:'fullDate' }}
+      </p>
+    </md-list-item>
+  </section>
 </md-list>

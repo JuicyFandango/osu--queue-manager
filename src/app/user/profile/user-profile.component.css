@@ -1,20 +1,33 @@
-.userProfile h1, h2, h3, h4{
-  color:white;
+.queueStatus{
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color:white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: bold;
 }
+  .queueOpen {
+    background-color: rgb(26, 135, 67);
+  }
+  .queueClosed{
+    background-color: rgb(180, 44, 44)
+  }
 
 .userProfile {
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: rgb(38, 38, 38);
 }
+  .userProfile h1, h2, h3, h4{
+    color:white;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    margin: 0px;
+  }
 
-.userProfile .userImage{
-  border-radius: 75px;
-  margin-bottom: 5px;
-}
+  .userProfile .userImage{
+    border-radius: 50px;
+    margin-bottom: 5px;
+  }
 
-.beatmaps{
-  margin: 25px;
+.containers{
+  margin: 15px;
 }
