@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser'
-import { BeatmapService } from '../_services/beatmap.service'
-import { BeatmapSet } from '../_models/beatmapset'
+import { BeatmapService } from '../../_services/beatmap.service'
+import { BeatmapSet } from '../../_models/beatmapset'
 import { Router } from '@angular/router'
 
 @Component({

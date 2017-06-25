@@ -6,16 +6,16 @@ import { FormsModule } from '@angular/forms'
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialUIModule } from './_modules/materialUI.module'
 ////////////////////////////////////////////////////////////////////////////////
-// Modules - App Modules
-import { UserProfileComponent } from './user/profile/user-profile.component'
 // Modules - Service Modules
 import { ServicesModule } from './_services/services.modules'
 ////////////////////////////////////////////////////////////////////////////////
+// Pages
+import { UserProfileComponent } from './_pages/user/profile/user-profile.component'
+import { LoginComponent } from './_pages/login/login.component'
+import { RegisterComponent } from './_pages/user/register/register.component'
+import { HomeComponent } from './_pages/home/home.component'
 // Components
 import { AppComponent } from './app.component'
-import { LoginComponent } from './login/login.component'
-import { RegisterComponent } from './register/register.component'
-import { HomeComponent } from './home/home.component'
 import { NavBarComponent } from './_components/navigation/nav-bar/navbar.navigation.component'
 import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
 import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'

@@ -2,9 +2,9 @@ import { Routes, RouterModule } from '@angular/router'
 
 import { AuthGuard } from './_guards/auth.guard'
 
-import { HomeComponent } from './home/home.component'
-import { LoginComponent } from './login/login.component'
-import { UserProfileComponent } from './user/profile/user-profile.component'
+import { HomeComponent } from './_pages/home/home.component'
+import { LoginComponent } from './_pages/login/login.component'
+import { UserProfileComponent } from './_pages/user/profile/user-profile.component'
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent, data:{title : "Home"} },

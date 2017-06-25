@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { ActivatedRoute } from '@angular/router'
 import { Title } from '@angular/platform-browser'
-import { User } from '../../_models/user'
-import { UserService } from '../../_services/user.service'
-import { BeatmapSet } from '../../_models/beatmapset'
-import { BeatmapService } from '../../_services/beatmap.service'
+import { User } from '../../../_models/user'
+import { UserService } from '../../../_services/user.service'
+import { BeatmapSet } from '../../../_models/beatmapset'
+import { BeatmapService } from '../../../_services/beatmap.service'
 
 @Component({
   selector: 'app-user-profile',
