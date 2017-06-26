@@ -1,3 +1,45 @@
-<section>
-  beatmapset-detail works!
+<section *ngIf="beatmapSet?.id">
+  <section fxLayout.md="row" fxLayout.xs="column" fxLayoutGap="15px" class="container">
+    <!-- Beatmapset related info -->
+    <section fxFlex="20" fxFlex.xs="100">
+      <section class="beatmapSetInfoContainer" fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="center center">
+        <img src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
+        <h4>{{ beatmapSet.title }}</h4>
+        <h5>{{ beatmapSet.creator.name }}</h5>
+      </section>
+      <md-card>
+        <md-list dense>
+          <md-list-item>Status: {{ beatmapSet.status | BeatmapSetStatus }}</md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>BPM: {{ beatmapSet.bpm }}</md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>Genre: {{ beatmapSet.genre | BeatmapSetGenre }}</md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>Language: {{ beatmapSet.language | BeatmapSetLanguage }}</md-list-item>
+          <md-divider></md-divider>
+          <md-list-item>Last updated: {{ beatmapSet.lastUpdatedDate | date:"fullDate"}}</md-list-item>
+        </md-list>
+        <br />
+        <md-card-actions fxLayoutAlign="center center">
+          <button color="primary" fxFlex="50" md-raised-button>SHARE</button>
+          <button color="primary" fxFlex="50" md-raised-button>SUBSCRIBE</button>
+        </md-card-actions>
+      </md-card>
+    </section>
+
+    <!-- Beatmap diff's card -->
+    <section fxFlex.md="80" fxFlex.xs="100">
+      <md-card>
+        <md-card-title>
+          Difficulties
+        </md-card-title>
+        <md-card-content>
+          <md-list>
+
+          </md-list>
+        </md-card-content>
+      </md-card>
+    </section>
+  </section>
+
 </section>

@@ -7,10 +7,11 @@ import { Router, ActivatedRoute } from '@angular/router'
 @Component({
   selector: 'app-beatmapset-detail',
   templateUrl: './beatmapset-detail.component.html',
+  styleUrls: ['./beatmapset-detail.component.css'],
 })
 export class BeatmapsetDetailComponent implements OnInit {
 
-  beatmapset: BeatmapSet
+  beatmapSet: BeatmapSet
 
   private sub:any;
 
@@ -32,8 +33,11 @@ export class BeatmapsetDetailComponent implements OnInit {
     this.sub = this.route.params.subscribe( params => {
       id = + params['id']
 
-      this.beatmapService.getBeatmapSet(532555).then( (bms) => {
-        this.beatmapset = bms;
+      this.beatmapService.getBeatmapSet(id).then( (bms) => {
+        this.beatmapSet = bms;
+        this.title.setTitle('osu!QM || ' + this.beatmapSet.title + ' by ' + this.beatmapSet.artist)
+
+        this.beatmapSet = bms;
       });
     })
 
