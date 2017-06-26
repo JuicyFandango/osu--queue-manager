@@ -11,17 +11,11 @@ export class BeatmapsetCardComponent {
 
   @Input() beatmapSet: BeatmapSet
 
-  isInfoToggled:boolean = false;
-
   constructor
   (
     private router: Router,
   ){
 
-  }
-
-  toggleInfo(){
-    this.isInfoToggled = !this.isInfoToggled
   }
 
   goToProfilePage(userId: number){

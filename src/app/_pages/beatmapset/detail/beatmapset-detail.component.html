@@ -37,12 +37,16 @@
         <md-card-content>
           <md-divider></md-divider>
           <md-list>
-            <md-list-item *ngFor="let beatmap of beatmapSet.beatmaps">
-              <img mdTooltip="{{ beatmap.creator.name }}" class="avatar" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
-              <p md-line>{{ beatmap.diffName }} - {{ beatmap.mode | BeatmapMode }}</p>
-              <p md-line>{{ beatmap.difficultyRating }}</p>
-              <button color="accent" md-raised-button>Mod</button>
-            </md-list-item>
+            <!-- Difficulty info -->
+            <section *ngFor="let beatmap of beatmapSet.beatmaps">
+              <md-list-item>
+                <img mdTooltip="{{ beatmap.creator.name }}" class="avatar" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
+                <p md-line>{{ beatmap.diffName }} - {{ beatmap.mode | BeatmapMode }}</p>
+                <p md-line>{{ beatmap.difficultyRating }}</p>
+                <button color="accent" md-raised-button>Mod</button>
+              </md-list-item>
+              <md-divider></md-divider>
+            </section>
           </md-list>
         </md-card-content>
       </md-card>

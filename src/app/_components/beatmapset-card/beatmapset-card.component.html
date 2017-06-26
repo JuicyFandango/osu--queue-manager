@@ -8,26 +8,6 @@
 
   <img md-card-image class="clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
 
-  <md-card-content>
-    <section fxLayout="row">
-      <button fxFlex="100" md-button (click)="toggleInfo()">
-        <section *ngIf="!isInfoToggled">
-          Show more...
-        </section>
-        <section *ngIf="isInfoToggled">
-          Show less...
-        </section>
-      </button>
-    </section>
-    <section *ngIf="isInfoToggled" fxLayout="row">
-      <md-list dense>
-        <md-list-item>BPM: {{ beatmapSet.bpm }}</md-list-item>
-        <md-list-item>Genre: {{ beatmapSet.genre | BeatmapSetGenre }}</md-list-item>
-        <md-list-item>Language: {{ beatmapSet.language | BeatmapSetLanguage }}</md-list-item>
-      </md-list>
-    </section>
-  </md-card-content>
-
   <md-card-actions fxLayoutAlign="center center">
     <button color="primary" fxFlex="50" md-raised-button>SHARE</button>
     <button color="primary" fxFlex="50" md-raised-button>SUBSCRIBE</button>

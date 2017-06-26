@@ -11,7 +11,7 @@ export class BeatmapService {
       beatmaps:
       [
         {
-          id: 1134049,
+          id: 1128459,
           creator: {
             id : 1576498,
             name : "Cloudchaser",
@@ -28,6 +28,44 @@ export class BeatmapService {
           diffName: "Can't Stop The Jingle Bells!!!",
           mode: BeatmapMode.OSU,
           difficultyRating: 4.07
+        },
+        {
+          id: 1134049,
+          creator: {
+            id : 7293512,
+            name : "-Nitrous",
+            type : 1,
+            country : "PH",
+            isQueueOpen : false,
+            maxAllowedInQueue : 3,
+            currentItemsInQueue : 10,
+            rankedMaps : 3,
+            pendingMaps : 5,
+            lovedMaps : 0,
+            graveyardedMaps : 18,
+          },
+          diffName: "Nitrou's Normal",
+          mode: BeatmapMode.OSU,
+          difficultyRating: 1.81
+        },
+        {
+          id: 1134049,
+          creator: {
+            id : 7452237,
+            name : "Pentori",
+            type : 1,
+            country : "AU",
+            isQueueOpen : true,
+            maxAllowedInQueue : 3,
+            currentItemsInQueue : 10,
+            rankedMaps : 4,
+            pendingMaps : 1,
+            lovedMaps : 0,
+            graveyardedMaps : 0,
+          },
+          diffName: "Pentori's Hard",
+          mode: BeatmapMode.OSU,
+          difficultyRating: 3.08
         }
       ],
       status: BeatmapsetStatus.RANKED,
