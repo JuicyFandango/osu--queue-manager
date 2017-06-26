@@ -18,6 +18,16 @@ body{
 .m-t-20 { margin-top: 20px }
 .m-b-20 { margin-bottom: 20px }
 
+.avatar{
+  background-color: rgb(40, 40, 40);
+  border-width: thin;
+  border-color: white;
+}
+  .avatar:hover{
+    transition:  all 0.2s;
+    transform: scale(1.10);
+  }
+
 .pull-left {
   float: left !important;
 }

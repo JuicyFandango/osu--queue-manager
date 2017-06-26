@@ -2,7 +2,8 @@ import { Beatmap } from './beatmap'
 import { User } from './user'
 
 /**
- * Available status
+ * Available status, any value below 0 is considered not valid for ranking
+ * purposes
  * @type {Number}
  */
 export enum BeatmapsetStatus {
@@ -16,7 +17,7 @@ export enum BeatmapsetStatus {
 }
 
 /**
- * Available Languages
+ * Available Languages, extracted from the osu!'s API documentation
  * @type {Number}
  */
 export enum BeatmapsetLanguage {
