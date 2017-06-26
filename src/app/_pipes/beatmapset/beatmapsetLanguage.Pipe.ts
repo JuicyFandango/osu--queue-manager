@@ -1,8 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core'
-import { BeatmapsetLanguage } from '../_models/beatmapset'
+import { BeatmapsetLanguage } from '../../_models/beatmapset'
 
 @Pipe({
-  name: 'BeatmapsetLanguage'
+  name: 'BeatmapSetLanguage'
 })
 export class BeatmapsetLanguagePipe implements PipeTransform {
 

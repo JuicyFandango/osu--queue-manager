@@ -1,8 +1,9 @@
 <md-card>
 
   <md-card-header>
-    <img md-card-avatar mdTooltip="{{ beatmapSet.creator.name }}" class="clickable" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
+    <img md-card-avatar mdTooltip="{{ beatmapSet.creator.name }}" class="clickable avatar" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
     <md-card-title>{{ beatmapSet.title }}</md-card-title>
+      <md-card-subtitle>{{ beatmapSet.status | BeatmapSetStatus }}</md-card-subtitle>
   </md-card-header>
 
   <img md-card-image class="clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
@@ -21,8 +22,8 @@
     <section *ngIf="isInfoToggled" fxLayout="row">
       <md-list dense>
         <md-list-item>BPM: {{ beatmapSet.bpm }}</md-list-item>
-        <md-list-item>Genre: {{ beatmapSet.genre }}</md-list-item>
-        <md-list-item>Status: {{ beatmapSet.status }}</md-list-item>
+        <md-list-item>Genre: {{ beatmapSet.genre | BeatmapSetGenre }}</md-list-item>
+        <md-list-item>Language: {{ beatmapSet.language | BeatmapSetLanguage }}</md-list-item>
       </md-list>
     </section>
   </md-card-content>

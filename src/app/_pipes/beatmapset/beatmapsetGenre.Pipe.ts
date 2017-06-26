@@ -1,8 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core'
-import { BeatmapsetGenre } from '../_models/beatmapset'
+import { BeatmapsetGenre } from '../../_models/beatmapset'
 
 @Pipe({
-  name: 'BeatmapsetGenre'
+  name: 'BeatmapSetGenre'
 })
 export class BeatmapsetGenrePipe implements PipeTransform {
 
