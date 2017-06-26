@@ -14,6 +14,7 @@ import { UserProfileComponent } from './_pages/user/profile/user-profile.compone
 import { LoginComponent } from './_pages/login/login.component'
 import { RegisterComponent } from './_pages/user/register/register.component'
 import { HomeComponent } from './_pages/home/home.component'
+import { BeatmapsetDetailComponent } from './_pages/beatmapset/detail/beatmapset-detail.component'
 // Components
 import { AppComponent } from './app.component'
 import { NavBarComponent } from './_components/navigation/nav-bar/navbar.navigation.component'
@@ -45,6 +46,7 @@ import { AuthGuard } from './_guards/auth.guard'
     HomeComponent,
     NavBarComponent,
     UserProfileComponent,
+    BeatmapsetDetailComponent,
     BeatmapsetCardComponent,
     BeatmapsetListComponent,
   ],

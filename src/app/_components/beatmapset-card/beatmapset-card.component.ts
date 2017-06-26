@@ -26,4 +26,8 @@ export class BeatmapsetCardComponent {
   goToProfilePage(userId: number){
     this.router.navigate(['user/profile', userId])
   }
+
+  goToBeatmapsetDetail(bmsId: number){
+    this.router.navigate(['beatmapset', bmsId])
+  }
 }

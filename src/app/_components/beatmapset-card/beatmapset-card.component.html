@@ -1,11 +1,11 @@
 <md-card>
 
   <md-card-header>
-    <img md-card-avatar mdTooltip="{{ beatmapSet.creator.name }}" class="link" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
+    <img md-card-avatar mdTooltip="{{ beatmapSet.creator.name }}" class="clickable" (click)="goToProfilePage(beatmapSet.creator.id)" src="https://a.ppy.sh/{{ beatmapSet.creator.id }}" alt="">
     <md-card-title>{{ beatmapSet.title }}</md-card-title>
   </md-card-header>
 
-  <img md-card-image src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
+  <img md-card-image class="clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
 
   <md-card-content>
     <section fxLayout="row">

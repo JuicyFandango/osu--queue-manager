@@ -21,10 +21,14 @@ export class NavBarComponent {
     });
   }
 
-  goToLogin(isLogout){
-    if (isLogout) {
+  goToLogin(isLogginOut){
+    if (isLogginOut) {
       localStorage.clear()
     }
     this.router.navigate(['login'])
+  }
+
+  goToHome(){
+    this.router.navigate(['home'])
   }
 }

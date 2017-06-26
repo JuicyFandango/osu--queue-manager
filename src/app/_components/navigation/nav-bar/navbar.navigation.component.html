@@ -1,5 +1,5 @@
 <md-toolbar color="primary">
-  <span><a href="/home">osu!</a></span>
+  <span (click)="goToHome()" class="clickable">osu!QM</span>
 
   <span mdTooltip="Log-in" *ngIf="!isUserLoggedIn"><button md-icon-button (click)="goToLogin(false)"><md-icon>input</md-icon></button></span>
 

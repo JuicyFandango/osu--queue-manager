@@ -25,9 +25,9 @@ body{
   float: right !important;
 }
 
-.link{
+.clickable{
   cursor:pointer
 }
-  .link:hover{
+  .clickable:hover{
     opacity: 0.95
   }

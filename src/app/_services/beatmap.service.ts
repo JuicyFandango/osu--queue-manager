@@ -58,6 +58,12 @@ export class BeatmapService {
 
   constructor(){}
 
+  /**
+   * Gets a BeatmapSet from it's ID
+   * @method getBeatmapSet
+   * @param  {number}      id [description]
+   * @return {[type]}         [description]
+   */
   getBeatmapSet(id:number){
     return new Promise<BeatmapSet>( (resolve, reject) => {
       //TODO: Replace fakeApi with an actual API
@@ -72,6 +78,12 @@ export class BeatmapService {
     })
   }
 
+  /**
+   * Gets all beatmapsets from a user which state is Pending
+   * @method getUserPendingBeatmapSet
+   * @param  {number}                 userId [description]
+   * @return {[type]}                        [description]
+   */
   getUserPendingBeatmapSet(userId:number){
     return new Promise<BeatmapSet[]>( (resolve,reject) => {
       //TODO: Replace fakeApi with an actual API
