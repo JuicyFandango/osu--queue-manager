@@ -3,7 +3,6 @@
 import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
 import { FormsModule } from '@angular/forms'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { MaterialUIModule } from './_modules/materialUI.module'
 ////////////////////////////////////////////////////////////////////////////////
 // Modules - Service Modules
@@ -36,7 +35,6 @@ import { AuthGuard } from './_guards/auth.guard'
     BrowserModule,
     FormsModule,
     routing,
-    BrowserAnimationsModule,
     MaterialUIModule,
     ServicesModule,
     PipeModule,

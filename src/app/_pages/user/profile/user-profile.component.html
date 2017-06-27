@@ -1,3 +1,4 @@
+<!-- User info -->
 <section *ngIf="user?.id" >
   <section class="userProfile" fxLayout="column" fxLayoutGap="10px" fxLayoutAlign="center center">
     <img class="userImage" src="https://a.ppy.sh/{{ user.id }}" alt="">
@@ -54,4 +55,10 @@
       </md-card-content>
     </md-card>
   </section>
+</section>
+
+
+<!-- Not found user -->
+<section *ngIf="!user" fxLayout="row" fxLayoutAlign="center center" class="m-20">
+  <h1>This user has not yet registered in osu! Queue Manager</h1>
 </section>

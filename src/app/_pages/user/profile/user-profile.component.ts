@@ -14,7 +14,7 @@ import { BeatmapService } from '../../../_services/beatmap.service'
 })
 export class UserProfileComponent implements OnInit {
 
-  user:User = null;
+  user:User;
   private sub: any;
 
   pendingBeatmaps: BeatmapSet[];
@@ -49,6 +49,9 @@ export class UserProfileComponent implements OnInit {
       .then( (returned:BeatmapSet[]) => {
         this.pendingBeatmaps = returned
       });
+    })
+    .catch( () => {
+      this.user = null;
     })
 
   }

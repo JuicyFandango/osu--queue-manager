@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { FlexLayoutModule } from "@angular/flex-layout";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { MdButtonModule } from '@angular/material'
 import { MdSnackBarModule } from '@angular/material'
@@ -27,6 +28,7 @@ import { MdChipsModule } from '@angular/material'
     MdTooltipModule,
     MdChipsModule,
     FlexLayoutModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     MdButtonModule,
@@ -41,6 +43,7 @@ import { MdChipsModule } from '@angular/material'
     MdTooltipModule,
     MdChipsModule,
     FlexLayoutModule,
+    BrowserAnimationsModule,
   ],
 })
 
