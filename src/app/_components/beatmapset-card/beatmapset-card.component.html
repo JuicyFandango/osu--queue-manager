@@ -6,16 +6,16 @@
       <md-card-subtitle>{{ beatmapSet.status | BeatmapSetStatus }}</md-card-subtitle>
   </md-card-header>
 
-  <section class="imageContainer clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)">
+  <section md-card-image class="imageContainer clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)">
     <img class="image" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
     <section class="overlay">
       <span>View more...</span>
     </section>
   </section>
 
-  <md-card-actions fxLayoutAlign="center center">
-    <button color="primary" fxFlex="50" md-raised-button>SHARE</button>
-    <button color="primary" fxFlex="50" md-raised-button>SUBSCRIBE</button>
+  <md-card-actions fxLayoutAlign="center center" fxLayoutGap="5px">
+    <beatmapset-share-button [beatmapSetId]="beatmapSet.id" fxFlex="50"></beatmapset-share-button>
+    <beatmapset-subscribe-button [beatmapSetId]="beatmapSet.id" fxFlex="50"></beatmapset-subscribe-button>
   </md-card-actions>
 
 </md-card>

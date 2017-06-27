@@ -32,7 +32,6 @@ body{
 
 /** Adds the capacity to animate the image and add a text inside of it **/
 .imageContainer {
-  margin: 0 -24px 16px -24px;
   position: relative;
 }
   .imageContainer:hover {

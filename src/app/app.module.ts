@@ -20,6 +20,8 @@ import { AppComponent } from './app.component'
 import { NavBarComponent } from './_components/navigation/nav-bar/navbar.navigation.component'
 import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmapset-card.component'
 import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'
+import { BeatmapSetShareComponent } from './_components/beatmapset-share-button/beatmapset-share-button.component'
+import { BeatmapSetSubscribeComponent } from './_components/beatmapset-subscribe-button/beatmap-subscribe-button.component'
 ////////////////////////////////////////////////////////////////////////////////
 // Pipes
 import { PipeModule } from './_pipes/pipe.module'
@@ -49,6 +51,8 @@ import { AuthGuard } from './_guards/auth.guard'
     BeatmapsetDetailComponent,
     BeatmapsetCardComponent,
     BeatmapsetListComponent,
+    BeatmapSetShareComponent,
+    BeatmapSetSubscribeComponent,
   ],
   providers: [
     AuthGuard,
