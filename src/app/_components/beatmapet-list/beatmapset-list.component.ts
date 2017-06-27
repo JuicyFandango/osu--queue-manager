@@ -20,4 +20,8 @@ export class BeatmapsetListComponent implements OnInit{
   ngOnInit() {
 
   }
+
+  goToBeatmapSet(bmsId: number){
+    this.router.navigate(['beatmapset', bmsId])
+  }
 }
