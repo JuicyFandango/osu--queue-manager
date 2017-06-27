@@ -21,9 +21,9 @@
           <md-list-item>Last updated: {{ beatmapSet.lastUpdatedDate | date:"fullDate"}}</md-list-item>
         </md-list>
         <br />
-        <md-card-actions fxLayoutAlign="center center">
-          <button color="primary" fxFlex="50" md-raised-button>SHARE</button>
-          <button color="primary" fxFlex="50" md-raised-button>SUBSCRIBE</button>
+        <md-card-actions fxLayoutAlign="center center" fxLayoutGap="5px">
+          <beatmapset-share-button [beatmapSetId]="beatmapSet.id" fxFlex="50"></beatmapset-share-button>
+          <beatmapset-subscribe-button [beatmapSetId]="beatmapSet.id" fxFlex="50"></beatmapset-subscribe-button>
         </md-card-actions>
       </md-card>
     </section>
@@ -53,7 +53,7 @@
   </section>
 
   <!-- Comments section -->
-  <md-card class="container"> 
+  <md-card class="container">
     <md-card-title>
       Join the discussion
     </md-card-title>

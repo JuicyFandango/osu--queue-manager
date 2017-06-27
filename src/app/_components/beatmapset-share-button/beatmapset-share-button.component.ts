@@ -9,6 +9,7 @@ import { MdSnackBar } from '@angular/material'
 export class BeatmapSetShareComponent {
 
   @Input() beatmapSetId: number
+
   constructor
   (
     private snackBar: MdSnackBar,
@@ -18,6 +19,6 @@ export class BeatmapSetShareComponent {
 
   shareBeatmap(bmsId:number){
     //TODO: copy to clipboard
-    this.snackBar.open('Copied to clipboard')
+    this.snackBar.open('Copied to clipboard!', null, { duration: 2000 })
   }
 }
