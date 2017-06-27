@@ -1,0 +1,5 @@
+.image:hover{
+  transition: scale 0.2s;
+  transform: scale(0.95);
+  background-color: black;
+}

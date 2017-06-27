@@ -6,7 +6,7 @@
       <md-card-subtitle>{{ beatmapSet.status | BeatmapSetStatus }}</md-card-subtitle>
   </md-card-header>
 
-  <img md-card-image class="clickable" (click)="goToBeatmapsetDetail(beatmapSet.id)" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
+  <img md-card-image class="clickable image" (click)="goToBeatmapsetDetail(beatmapSet.id)" src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
 
   <md-card-actions fxLayoutAlign="center center">
     <button color="primary" fxFlex="50" md-raised-button>SHARE</button>

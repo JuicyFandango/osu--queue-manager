@@ -1,12 +1,12 @@
 <section *ngIf="beatmapSet?.id">
-
+  <!-- BeatmapSet section -->
   <section fxLayout.md="row" fxLayout.xs="column" fxLayoutGap="15px" class="container">
     <!-- Beatmapset related info -->
     <section fxFlex="20" fxFlex.xs="100">
       <section class="beatmapSetInfoContainer" fxLayout="column" fxLayoutGap="15px" fxLayoutAlign="center center">
         <img src="//b.ppy.sh/thumb/{{beatmapSet.id}}l.jpg"/>
         <h4>{{ beatmapSet.title }}</h4>
-        <h5>{{ beatmapSet.creator.name }}</h5>
+        <h5>uploaded by {{ beatmapSet.creator.name }}</h5>
       </section>
       <md-card>
         <md-list dense>
@@ -35,17 +35,16 @@
           Difficulties
         </md-card-title>
         <md-card-content>
-          <md-divider></md-divider>
           <md-list>
             <!-- Difficulty info -->
             <section *ngFor="let beatmap of beatmapSet.beatmaps">
+              <md-divider></md-divider>
               <md-list-item>
                 <img mdTooltip="{{ beatmap.creator.name }}" class="avatar" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
                 <p md-line>{{ beatmap.diffName }} - {{ beatmap.mode | BeatmapMode }}</p>
                 <p md-line>{{ beatmap.difficultyRating }}</p>
                 <button color="accent" md-raised-button>Mod</button>
               </md-list-item>
-              <md-divider></md-divider>
             </section>
           </md-list>
         </md-card-content>
@@ -53,4 +52,10 @@
     </section>
   </section>
 
+  <!-- Comments section -->
+  <md-card class="container"> 
+    <md-card-title>
+      Join the discussion
+    </md-card-title>
+  </md-card>
 </section>
