@@ -28,7 +28,7 @@ export class BeatmapsetDetailComponent implements OnInit {
 
   ngOnInit() {
 
-    let id:number = 0;
+    let id: number = 0;
     //Gets a beatmapset data form the provider to initiate
     this.sub = this.route.params.subscribe( params => {
       id = + params['id']
@@ -41,5 +41,9 @@ export class BeatmapsetDetailComponent implements OnInit {
       });
     })
 
+  }
+
+  goToUserProfile(userId: number){
+    this.router.navigate(['user/profile', userId])
   }
 }

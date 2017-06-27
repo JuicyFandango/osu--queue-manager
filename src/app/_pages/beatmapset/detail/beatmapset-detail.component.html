@@ -40,7 +40,7 @@
             <section *ngFor="let beatmap of beatmapSet.beatmaps">
               <md-divider></md-divider>
               <md-list-item>
-                <img mdTooltip="{{ beatmap.creator.name }}" class="avatar" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
+                <img mdTooltip="{{ beatmap.creator.name }}" (click)="goToUserProfile(beatmap.creator.id)" class="avatar" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
                 <p md-line>{{ beatmap.diffName }} - {{ beatmap.mode | BeatmapMode }}</p>
                 <p md-line>{{ beatmap.difficultyRating }}</p>
                 <button color="accent" md-raised-button>Mod</button>
