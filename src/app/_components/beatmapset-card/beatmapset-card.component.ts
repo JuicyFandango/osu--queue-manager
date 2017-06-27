@@ -4,8 +4,7 @@ import { Router } from '@angular/router'
 
 @Component({
   selector: 'beatmapset-card',
-  templateUrl: './beatmapset-card.component.html',
-  styleUrls: ['./beatmapset-card.component.css']
+  templateUrl: './beatmapset-card.component.html'
 })
 export class BeatmapsetCardComponent {
 

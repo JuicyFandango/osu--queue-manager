@@ -18,26 +18,57 @@ body{
 .m-t-20 { margin-top: 20px }
 .m-b-20 { margin-bottom: 20px }
 
+/* General purpose classes */
 .avatar{
   background-color: rgb(40, 40, 40);
   border-width: thin;
+  transition:  all 0.2s;
   border-color: white;
 }
-  .avatar:hover{
-    transition:  all 0.2s;
-    transform: scale(1.10);
+  .avatar:hover{ transform: scale(1.10); }
+
+.clickable{ cursor:pointer; }
+  .clickable:hover{ opacity: 0.95; }
+
+/** Adds the capacity to animate the image and add a text inside of it **/
+.imageContainer {
+  margin: 0 -24px 16px -24px;
+  position: relative;
+}
+  .imageContainer:hover {
+    background-color: rgb(40,40,40);
+  }
+  .imageContainer:hover .overlay { opacity: 1; }
+
+  .imageContainer:hover .image {
+    transform: scale(0.95);
+    filter:blur(5px);
   }
 
-.pull-left {
-  float: left !important;
-}
-.pull-right {
-  float: right !important;
-}
+  .imageContainer .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .2s ease;
+    background-color: rgba(50, 50, 50, 0.5);
+  }
 
-.clickable{
-  cursor:pointer
-}
-  .clickable:hover{
-    opacity: 0.95
+  .imageContainer .overlay span{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  }
+
+  .imageContainer .image {
+    transition: all 0.2s;
+    width: 100%;
   }
