@@ -35,7 +35,7 @@
           Difficulties
         </md-card-title>
         <md-card-content>
-          <md-list>
+          <md-list class="diffList">
             <!-- Difficulty info -->
             <section *ngFor="let beatmap of beatmapSet.beatmaps">
               <md-divider></md-divider>
@@ -57,5 +57,8 @@
     <md-card-title>
       Join the discussion
     </md-card-title>
+    <md-card-content>
+      <beatmapSet-comments [beatmapSetId] = "beatmapSet.id"></beatmapSet-comments>
+    </md-card-content>
   </md-card>
 </section>

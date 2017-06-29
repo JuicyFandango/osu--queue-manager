@@ -3,7 +3,7 @@ import { CommentQueue } from '../_models/comment-queue'
 import { CommentNode } from '../_models/comment-node'
 
 @Injectable()
-export class BeatmapCommentService {
+export class BeatmapSetCommentService {
   private fakeApi: Object[] = [
     {
       beatmapSetId : 532555,

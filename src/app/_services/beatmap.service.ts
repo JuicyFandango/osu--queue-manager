@@ -66,6 +66,63 @@ export class BeatmapService {
           diffName: "Pentori's Hard",
           mode: BeatmapMode.OSU,
           difficultyRating: 3.08
+        },
+        {
+          id: 1134049,
+          creator: {
+            id : 7452237,
+            name : "Pentori",
+            type : 1,
+            country : "AU",
+            isQueueOpen : true,
+            maxAllowedInQueue : 3,
+            currentItemsInQueue : 10,
+            rankedMaps : 4,
+            pendingMaps : 1,
+            lovedMaps : 0,
+            graveyardedMaps : 0,
+          },
+          diffName: "Pentori's Hard",
+          mode: BeatmapMode.OSU,
+          difficultyRating: 3.08
+        },
+        {
+          id: 1134049,
+          creator: {
+            id : 7452237,
+            name : "Pentori",
+            type : 1,
+            country : "AU",
+            isQueueOpen : true,
+            maxAllowedInQueue : 3,
+            currentItemsInQueue : 10,
+            rankedMaps : 4,
+            pendingMaps : 1,
+            lovedMaps : 0,
+            graveyardedMaps : 0,
+          },
+          diffName: "Pentori's Hard",
+          mode: BeatmapMode.OSU,
+          difficultyRating: 3.08
+        },
+        {
+          id: 1134049,
+          creator: {
+            id : 7452237,
+            name : "Pentori",
+            type : 1,
+            country : "AU",
+            isQueueOpen : true,
+            maxAllowedInQueue : 3,
+            currentItemsInQueue : 10,
+            rankedMaps : 4,
+            pendingMaps : 1,
+            lovedMaps : 0,
+            graveyardedMaps : 0,
+          },
+          diffName: "Pentori's Hard",
+          mode: BeatmapMode.OSU,
+          difficultyRating: 3.08
         }
       ],
       status: BeatmapsetStatus.RANKED,
