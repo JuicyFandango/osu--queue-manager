@@ -24,7 +24,7 @@ export class BeatmapSetSubscribeComponent {
     this.snackBar.open('Successfully subscribed!', 'Undo', { duration: 2000 })
     .onAction().subscribe( () => {
       //TODO: Undo subscription
-      this.snackBar.open('Subscription undone')
+      this.snackBar.open('Subscription undone', null, { duration: 2000 })
     })
   }
 }
