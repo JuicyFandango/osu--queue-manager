@@ -1,14 +1,16 @@
 import { NgModule } from '@angular/core'
 
-import { UserService } from '../_services/user.service'
-import { LoginService } from '../_services/login.service'
-import { BeatmapService } from '../_services/beatmap.service'
+import { UserService } from './user.service'
+import { LoginService } from './login.service'
+import { BeatmapService } from './beatmap.service'
+import { BeatmapCommentService } from './beatmap-comment.service'
 
 @NgModule({
   providers: [
     UserService,
     LoginService,
     BeatmapService,
+    BeatmapCommentService,
   ]
 })
 
