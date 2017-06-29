@@ -24,7 +24,7 @@ export class BeatmapSetCommentService {
             graveyardedMaps : 60,
           },
           date: Date.parse('2016-12-20'),
-          comment: 'This is a comment'
+          comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae libero non purus vehicula porttitor ac at dolor. Donec mattis ex vitae ante mollis, ut pretium tortor sollicitudin. Vestibulum ullamcorper volutpat diam, vel luctus tortor. Vestibulum semper ullamcorper diam semper facilisis. Nullam id lorem condimentum lorem rutrum iaculis sed id metus. Nam enim lorem, tempus in consequat eu, interdum a orci. Duis nisi est, pellentesque ut neque eu, volutpat tincidunt turpis. Vestibulum euismod, nisi a viverra vestibulum, purus lacus ornare lacus, id commodo erat quam sit amet tortor. Integer eu massa quis massa rutrum vehicula. Sed viverra venenatis magna, id semper turpis euismod id. In maximus dignissim aliquam. Etiam scelerisque maximus lacinia. Duis volutpat eleifend venenatis. Curabitur molestie maximus urna ac pellentesque. In varius velit eu libero rutrum, vel vestibulum augue varius. Integer id ultrices ligula. Etiam nec lacinia dui. Proin egestas rhoncus diam, vitae lobortis tortor dictum fringilla. Cras eget mollis lacus, ut tincidunt ex. Donec auctor fermentum interdum. Suspendisse potenti. Quisque fringilla lacus ac diam ultricies, sed vulputate mi pharetra. Sed sit amet nulla lectus. Fusce vehicula nulla ut enim porta, nec eleifend ipsum accumsan. Quisque sit amet metus eu mi consequat condimentum in eget tortor. Aenean ullamcorper nibh eget pretium congue. Praesent interdum justo tellus, sed consequat justo scelerisque vel. Sed lobortis placerat ligula, id tristique eros.'
         }
       ]
     }

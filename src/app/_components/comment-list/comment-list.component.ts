@@ -1,6 +1,7 @@
 import { Component, Input, OnInit }  from '@angular/core'
 import { BeatmapSetCommentService } from '../../_services/beatmap-comment.service'
 import { CommentQueue } from '../../_models/comment-queue'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'beatmapSet-comments',
@@ -15,6 +16,7 @@ export class CommentListComponent implements OnInit {
 
   constructor (
     private beatmapSetCommentService: BeatmapSetCommentService,
+    private router: Router,
   ) {
 
   }
@@ -24,5 +26,9 @@ export class CommentListComponent implements OnInit {
     .then( ( commentQueue: CommentQueue ) => {
       this.commentQueue = commentQueue
     })
+  }
+
+  goToUserProfile(userId: number){
+    this.router.navigate(['user/profile', userId])
   }
 }
