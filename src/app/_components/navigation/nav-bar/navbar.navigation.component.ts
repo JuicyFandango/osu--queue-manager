@@ -31,4 +31,8 @@ export class NavBarComponent {
   goToHome(){
     this.router.navigate(['home'])
   }
+
+  goToMyProfile(){
+    this.router.navigate(['user/profile', Number(localStorage.getItem("currentUser"))])
+  }
 }

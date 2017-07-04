@@ -41,7 +41,12 @@ export class UserProfileComponent implements OnInit {
     .then( (user:User) =>{
       this.user = user
 
-      this.title.setTitle("osu!QM || " + user.name + "'s profile")
+      if ( localStorage.getItem("currentUser") == this.user.id.toString() ) {
+        this.title.setTitle("osu!QM || My profile")  
+      } else {
+        this.title.setTitle("osu!QM || " + user.name + "'s profile")
+      }
+
 
       //Get pending beatmapsets
       //TODO: Implement this

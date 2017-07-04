@@ -43,7 +43,6 @@
                 <img mdTooltip="{{ beatmap.creator.name }}" (click)="goToUserProfile(beatmap.creator.id)" class="avatar clickable" md-list-avatar src="https://a.ppy.sh/{{ beatmap.creator.id }}">
                 <p md-line>{{ beatmap.diffName }} - {{ beatmap.mode | BeatmapMode }}</p>
                 <p md-line>{{ beatmap.difficultyRating }}</p>
-                <button color="accent" md-raised-button>Mod</button>
               </md-list-item>
             </section>
           </md-list>
@@ -52,13 +51,4 @@
     </section>
   </section>
 
-  <!-- Comments section -->
-  <md-card class="container">
-    <md-card-title>
-      Join the discussion
-    </md-card-title>
-    <md-card-content>
-      <beatmapSet-comments [beatmapSetId] = "beatmapSet.id"></beatmapSet-comments>
-    </md-card-content>
-  </md-card>
 </section>

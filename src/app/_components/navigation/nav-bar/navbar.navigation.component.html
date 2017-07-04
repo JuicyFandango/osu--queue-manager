@@ -6,6 +6,6 @@
   <span mdTooltip="Subscribed BMS" *ngIf="isUserLoggedIn"><button md-icon-button><md-icon>bookmark border</md-icon></button></span>
   <span mdTooltip="Notifications" *ngIf="isUserLoggedIn"><button md-icon-button><md-icon>notifications</md-icon></button></span>
 
-  <span mdTooltip="My profile" *ngIf="isUserLoggedIn"><button md-icon-button><md-icon>person</md-icon></button></span>
+  <span (click)="goToMyProfile()" mdTooltip="My profile" *ngIf="isUserLoggedIn"><button md-icon-button><md-icon>person</md-icon></button></span>
   <span mdTooltip="Log-out" *ngIf="isUserLoggedIn"><button md-icon-button (click)="goToLogin(true)"><md-icon>exit_to_app</md-icon></button></span>
 </md-toolbar>

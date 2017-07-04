@@ -21,7 +21,6 @@ import { BeatmapsetCardComponent } from './_components/beatmapset-card/beatmaps
 import { BeatmapsetListComponent } from './_components/beatmapet-list/beatmapset-list.component'
 import { BeatmapSetShareComponent } from './_components/beatmapset-share-button/beatmapset-share-button.component'
 import { BeatmapSetSubscribeComponent } from './_components/beatmapset-subscribe-button/beatmap-subscribe-button.component'
-import { CommentListComponent } from './_components/comment-list/comment-list.component'
 ////////////////////////////////////////////////////////////////////////////////
 // Pipes
 import { PipeModule } from './_pipes/pipe.module'
@@ -52,7 +51,6 @@ import { AuthGuard } from './_guards/auth.guard'
     BeatmapsetListComponent,
     BeatmapSetShareComponent,
     BeatmapSetSubscribeComponent,
-    CommentListComponent,
   ],
   providers: [
     AuthGuard,
