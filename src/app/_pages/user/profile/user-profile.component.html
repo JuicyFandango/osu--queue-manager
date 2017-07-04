@@ -26,12 +26,30 @@
   <!-- Need to make a use of this -->
   <section class="containers">
     <md-card>
-      <section fxLayout="row" fxLayoutAlign="center right">
-        {{ user.profileDescription }}
-      </section>
+      <md-card-content>
+        <section fxLayout="row">
+          <section fxFlex="100" [innerHTML]="user.profileDescription">
+          </section>
+        </section>
+      </md-card-content>
+      <md-card-actions>
+        <button [disabled]="!user.isQueueOpen" md-raised-button color="accent" fxFlex="100">Request mod</button>
+      </md-card-actions>
     </md-card>
   </section>
 
+  <!-- Queue Info -->
+  <section fxLayout.md="row" fxLayout.xs="column" fxLayoutGap="10px" class="containers">
+    <md-card fxFlex="100">
+      <md-card-title>
+        Modding queue [<span>{{ pendingBeatmaps.length }}</span>]
+      </md-card-title>
+      <md-card-content>
+        <beatmapset-list [beatmapSets]="pendingBeatmaps">
+        </beatmapset-list>
+      </md-card-content>
+    </md-card>
+  </section>
 
   <!-- BeatmapSet listing -->
   <section fxlayout.md="row" fxLayout.xs="column" fxLayoutGap="10px" class="containers">
