@@ -1,4 +1,4 @@
-export enum UserType{
+export enum UserType {
   MODDER = 1,
   QUALITY_ASSURANCE_TEAM, // Quality Assurance Team
   BEGINNER_BEATMAP_NOMINATOR, // First Tier, Beginner Beatmap Nominator
@@ -6,12 +6,13 @@ export enum UserType{
 }
 
 //TODO: Online status where?
-export class User{
+export class User {
   id:number
   name:string
   type:UserType
   country:string
   isQueueOpen:boolean
+  profileDescription:string
   maxQueueItems: number
   maxAllowedInQueue:number
   currentItemsInQueue: number
@@ -34,6 +35,7 @@ export class User{
     _user.type = obj["type"]
     _user.country = obj["country"]
     _user.isQueueOpen = obj["isQueueOpen"]
+    _user.profileDescription = obj["profileDescription"]
     _user.maxQueueItems = obj["maxQueueItems"]
     _user.maxAllowedInQueue = obj["maxAllowedInQueue"]
     _user.currentItemsInQueue = obj["currentItemsInQueue"]

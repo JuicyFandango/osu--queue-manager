@@ -11,6 +11,7 @@ export class UserService {
       type : 1,
       country : "CL",
       isQueueOpen : true,
+      profileDescription: "★ = Yes / Accepting / in use / valid now. <br> ★ = No / Not accepting/ Not valid for now/better don't ask. ★ = Maybe / Can be discussed, you can give it a try. First Step: Conditions (need at least half of them) ★Your map doesn't exceed 6 mins long. ★Your mapset doesn't contain over 5 difficults. ★Half of your beatmap is mapped by yourself. ★You're an unexperienced mapper. ★ You respond appropriately to a mod, giving reasons and with the correct respect. ★Your map is bubbled/popped/disqualified/starred ★Your beatmap reflects dedication and affection Second Step: Status of modding ★ Ask for mods via PM in-game / forum. ★ My mutual friends can always ask for mods by PM in-game, but it doesn't mean It will be my priority. ★ Accepting mods via Modding Queue for non-friends. ★ M4M request. Third Step: Request!",
       maxAllowedInQueue : 3,
       currentItemsInQueue : 10,
       rankedMaps : 4,
